@@ -12,15 +12,6 @@ module('Integration | Component | book-cover', function(hooks) {
 
     await render(hbs`{{book-cover}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#book-cover}}
-        template block text
-      {{/book-cover}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), 'by');
   });
 });
