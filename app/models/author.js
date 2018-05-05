@@ -8,5 +8,4 @@ export default Publisher.extend({
   loadedAt: on('didLoad', function() {
     this.set('loadedAt', new Date());
   })
-
 });

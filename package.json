@@ -14,7 +14,8 @@
     "build": "ember build",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "prettier-all": "prettier '**/*.js' '!**/dist/**' '!**/tmp/**'"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -45,5 +46,8 @@
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
+  },
+  "dependencies": {
+    "prettier": "^1.12.1"
   }
 }

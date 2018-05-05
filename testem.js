@@ -1,12 +1,8 @@
 module.exports = {
   test_page: 'tests/index.html?hidepassed',
   disable_watching: true,
-  launch_in_ci: [
-    'chromium'
-  ],
-  launch_in_dev: [
-    'chromium'
-  ],
+  launch_in_ci: ['chromium'],
+  launch_in_dev: ['chromium'],
   browser_args: {
     Chrome: {
       mode: 'ci',

@@ -12,11 +12,9 @@ export default Route.extend({
   },
 
   actions: {
-
     showAll() {
       const total = this.controllerFor('books').total;
-      this.transitionTo({ queryParams: { limit: total }});
+      this.transitionTo({ queryParams: { limit: total } });
     }
-
   }
 });
